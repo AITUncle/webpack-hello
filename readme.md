@@ -83,7 +83,7 @@ module.exports = function() {
 # webpack demo2 使用bable loader
 ### 1)安装babel模块：npm install --save-dev babel-core babel-loader babel-preset-es2015 babel-preset-react
 ### 2)webpack.config.js中添加json-loader配置，如下
-<code>
+''' javascript
 loaders:[
     {
         test: /\.js$/,    //正则表达式，匹配的文件名的文件将是使用该loader处理
@@ -94,9 +94,9 @@ loaders:[
         }
     }
 ]
-</code>
+''' 
 ### 3)在你的js文件中尽情的使用es2015特性，如main.js中使用class：
-<code>
+''' javascript
     //es2015 class
     class HelloClass{
         sayHello(){
@@ -105,8 +105,8 @@ loaders:[
         return hello;
         }
     }
-document.getElementById('root').appendChild(new HelloClass().sayHello());
-</pre>
+    document.getElementById('root').appendChild(new HelloClass().sayHello());
+'''
 
 ---
 
