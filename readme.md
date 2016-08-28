@@ -11,7 +11,7 @@
 	3.1)创建文件夹app和public，分别在public中创建index.html并写下你的html代码
 	3.2)在app文件夹下，放入你的原始数据和js代码文件
 ### 4)通过webpack打包：
-	4.1)执行shell命令：webpack entryFile outputFile
+	4.1)执行shell命令：webpack entryFile outputFile 如下：
 		./node_modules/.bin/webpack app/main.js public/bundle.js
 		那么在public中生成bundle.js便是打包后生成的文件。
 ### 5)浏览器打开index.html,代码生效，成功走起demo0
