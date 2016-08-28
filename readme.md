@@ -1,9 +1,9 @@
 # what is webpack?
     a)前端代码打包
-    b)javascript pre-processors,将jsx等新特性的语法，转换为浏览器能够识别语法的脚本。
+    b)javascript预处理,将es2015,jsx等新特性的语法，转换为浏览器能够识别的旧语法。
     ...
 
-# webpack demo0最简单（简陋）的方式使用 weppack
+# demo0:最简单（简陋）的方式使用 weppack
 ### 0)cd demo0(进入到demo0目录)
 ### 1)npm init 生成package.json 
 ### 2)npm install --save-dev webpack(当然你也可全局安装)
@@ -22,7 +22,7 @@
 
 
 
-# webpack demo1通过配置的方式(webpack.config.js)使用 webpack
+# demo1:通过配置的方式(webpack.config.js)使用 webpack
 ### 1)cd demo1
 ### 2)npm init 生成package.json
 ### 3)npm install -g webpack(这里选择了全局安装，当然你也可以像demo0中那样本地安装)
@@ -47,7 +47,7 @@ module.exports = {
 
 
 
-# webpack demo2 使用json-loader
+# demo2:使用json-loader
 ### 0)进入demo2目录: cd demo2
 ### 1)npm install --save-dev json-loader
 ### 2)webpack.config.js中添加json-loader配置，如下
@@ -81,7 +81,7 @@ module.exports = function() {
 
 
 
-# webpack demo2 使用bable loader
+# demo2:使用bable loader
 ### 1)安装babel模块：npm install --save-dev babel-core babel-loader babel-preset-es2015 babel-preset-react
 ### 2)webpack.config.js中添加json-loader配置，如下
 ```javascript
