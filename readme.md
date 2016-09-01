@@ -83,7 +83,7 @@ module.exports = function() {
 
 # demo2:使用bable loader
 ### 1)安装babel模块：npm install --save-dev babel-core babel-loader babel-preset-es2015 babel-preset-react
-### 2)webpack.config.js中添加json-loader配置，如下
+### 2)webpack.config.js中添加babel-loader配置，如下
 ```javascript
 loaders:[
     {
