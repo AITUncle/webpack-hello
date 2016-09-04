@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+	if(!'')
+		console.log("'' --> false");
+	if(!"")
+		console.log('"" --> false');
+	var undefinedVar ;
+	if(!undefinedVar)
+		console.log('undefinedVar --> false');
+	if(undefinedVar == undefined)
+		console.log("undefinedVar==undefined --> true")
+	var nullVar = null;
+	if(!nullVar)
+		console.log('nullVar --> false');
+	if(nullVar == undefined)//*****
+		console.log('nullVar==undefined --> true;');
+	var zeroNum = 0;
+	if(!zeroNum && !0.0)//***** 数字只有0才是false
+		console.log('zeroNum 0 or 0.0 --> false');
+	var negativeNum = -100;
+	if(negativeNum)
+		console.log('negativeNum --> true');
+	/*if(noDeclarationVar)
+		//语法错误，执行时抛出异常：Uncaught ReferenceError: noDeclarationVar is not defined
+	*/
+
+	//NaN
+	if(10/'a')
+		console.log('10/a --> false');
+	if(!NaN)
+		console.log('NaN --> false');
+	//这不是NaN这是Infinity，无穷大，因为null会被转换为0；所以返回:true;
+	if( 10/null )//*****
+		console.log('10/null --> true', 10/null);
+
+
+
+	console.log('=========================================================');
+
+
+
+	console.log('"" ==>' + Boolean(""));//false
+	console.log("'' ==>" + Boolean(''));//false
+	console.log("'abc' ==>" + Boolean('abc'));//true
+	console.log("'0' ==>" + Boolean('0'));//true
+
+	console.log("null ==>" + Boolean(null));//false
+	console.log("0 ==>" + Boolean(0));//false
+	console.log("0.0 ==>" + Boolean(0.0));//false
+	console.log("0.01 ==>" + Boolean(0.01));//true
+	console.log("1 ==>" + Boolean(1));//true
+	console.log("-1 ==>" + Boolean(-1));//true
+
+	console.log('NaN ==>' + Boolean(NaN));//false
+
+	console.log('null==undefined ==> ' + (null == undefined) + ';//undefined值派生自null，所以他们是这里返回true');
+
+	console.log('' + typeof null);//object
+	console.log('' + typeof undefined);//undefined
+
+
+	</script>
+</body>
+</html>
